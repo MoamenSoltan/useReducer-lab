@@ -1,0 +1,18 @@
+.cards  {
+    margin: auto;
+    width: 100%;/*width to main container */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.cards .card{
+    width: 60%; /*each container should be of this width*/
+    padding: 25px 15px;
+    border: solid black 5px;
+    border-radius: 15px;
+}
+.cards .card h4 {
+    min-width: 100%;
+}

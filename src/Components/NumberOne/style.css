@@ -87,3 +87,6 @@ button[type='submit']:hover{
     align-items: center;
     justify-content: center;
 }
+.BTN{
+    margin-left: 10px;
+}
