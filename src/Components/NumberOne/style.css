@@ -1,0 +1,89 @@
+.register {
+    
+    margin: auto;
+    width: 30%;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    text-align: right;/*the label adjustment*/
+}
+form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form div {
+
+     display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; /*important for the even spacing after label*/
+    /*always specify width with flex*/
+    margin-bottom: 20px;
+}
+label {
+    width: 30%;
+    margin-right: 10px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input[type='text'], input[type='password'] {
+    flex: 1;/*take remainder space
+    to make it symmetric , make label take specified width*/
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px gray;
+    font-size: 1.2em;
+    
+
+}
+button[type='submit'] {
+    padding: 10px 20px;
+    background-color: #333;;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+    border: none ;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+button[type='submit']:hover{
+    background-color: #555;
+}
+.toggleBtn {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    background-color: #1a5b97;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+
+}
+.toggleBtn:hover{
+    background-color: #12426e;
+}
+.finish {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+.finish .details {
+    margin: auto;
+    margin-top: 50;
+    width: fit-content;
+    padding: 30px 20px;
+    border-radius: 15px;
+    border: black solid 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
